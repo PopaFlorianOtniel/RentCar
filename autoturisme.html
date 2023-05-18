@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PFO Cars</title>
+    <meta name="viewport" content="wigth=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel = "icon" href = "logo_pfo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+
+</head>
+<body>
+    <div class="containerr">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_pfo.png" alt="logo"></a>
+        </div>
+        <div class="navbar">
+        
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        
+            <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                <li><a href="autoturisme.html">Autoturisme</a></li>
+                <li><a href="inchirieri.html">Inchirieri</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="termeni.html">Termeni&Conditii</a></li>
+            </ul>
+        
+        </div>
+    </div>
+
+    <div class="bg">
+       <!--<img src="chuttersnap-gts_Eh4g1lk-unsplash.jpg" style="width: 100%;">-->
+    </div>
+    <div>
+            <h2>Autoturisme</h2>
+        <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Toate</button>
+        <button class="btn" onclick="filterSelection('nature')"> 1</button>
+        <button class="btn" onclick="filterSelection('cars')"> 2</button>
+        <button class="btn" onclick="filterSelection('people')"> 3</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="rand">
+        <div class="coloana nature">
+            <div class="content">
+            <img src="images/398_bmw.jpg" alt="Car" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('bmw')"> <a href="inchirieri.html">BMW</a></button></h4>
+            </div>
+        </div>
+        <div class="coloana nature">
+            <div class="content">
+            <img src="images/1vw.jpg" alt="Car" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('volkswagen')"> <a href="inchirieri.html">Volkswagen</a></button></h4>
+            </div>
+        </div>
+        <div class="coloana nature">
+            <div class="content">
+            <img src="images/sigla mercedez benz.jpg" alt="Car" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('mercedes')"> <a href="inchirieri.html">Mercedes</a></button></h4>
+            </div>
+        </div>
+
+        <div class="coloana cars">
+            <div class="content">
+            <img src="images/dacia.jpg" alt="Car" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('dacia')"> <a href="inchirieri.html">Dacia</a></button></h4>
+            </div>
+        </div>
+        <div class="coloana cars">
+            <div class="content">
+            <img src="images/Nissan_logo.jpg" alt="Car" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('nisan')"> <a href="inchirieri.html">Nisan</a></button></h4>
+            </div>
+        </div>
+        <div class="coloana cars">
+            <div class="content">
+            <img src="images/hyundai.jpg" alt="Car" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('hyundai')"> <a href="inchirieri.html">Hyundai</a></button></h4>
+            </div>
+        </div>
+
+        <div class="coloana people">
+            <div class="content">
+            <img src="images/audi-logo-wallpaper-547-660x330.jpg" alt="Car" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('audi')"> <a href="inchirieri.html">Audi</a></button></h4>
+            </div>
+        </div>
+        <div class="coloana people">
+            <div class="content">
+            <img src="images/jaguar.jpg" alt="Car" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('jaguar')"> <a href="inchirieri.html">Jaguar</a></button></h4>
+            </div>
+        </div>
+        <div class="coloana people">
+            <div class="content">
+            <img src="images/ford.jpg" alt="Car" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('ford')"> <a href="inchiriere.html">Ford</a></button></h4>
+            </div>
+        </div>
+        <!-- END GRID -->
+    </div>
+    </div>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-snapchat-ghost"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html"><img src="images/logo_pfo.png" width="50px" alt="logo"></a></li>
+                <li class="list-inline-item"><a href="autoturisme.html">Autoturisme</a></li>
+                <li class="list-inline-item"><a href="inchirieri.html">Inchirieri</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                <li class="list-inline-item"><a href="termeni.html">Termemi&Conditii</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2022</p>
+        </footer>
+      </div>
+
+
+    <script src="JS/exemplu_java.js"></script>
+    <script src="JS/javascript.js"></script>
+</body>
+</html>

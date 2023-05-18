@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PFO Cars</title>
+    <meta name="viewport" content="wigth=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/exemplu_css.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel = "icon" href = "images/logo_pfo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="header" href="header.html">
+
+</head>
+<body>
+    <div class="containerr">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_pfo.png" alt="logo"></a>
+        </div>
+        <div class="navbar">
+        
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        
+            <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                <li><a href="autoturisme.html">Autoturisme</a></li>
+                <li><a href="inchirieri.html">Inchirieri</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="termeni.html">Termeni&Conditii</a></li>
+            </ul>
+        
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+          <img src="images/ford10.png" style="width: 100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/ford11.png" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/ford_4.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/ford_1.webp" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
+      
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:60%">
+        <div id="imgtext"></div>
+    </div>
+
+    <table border="1" align = center width = 90% bgcolor = white>
+        <th width="50%"><th colspan="2">Specificatii
+        <tr align = center></tr><td rowspan="4"><button class="btn" onclick="filterSelection('ford')"><img src="images/Ford.png" width="60%"></button><td colspan="2">Tarif maxim(pret in Euro): 200
+        <tr><td colspan="2">Zile 1       2-3     4-7     8-14    15-30
+        <tr><td colspan="2">Pret 200,00  180,00  165,00  150,00  100,00
+        <tr><td>Inchiriaza: Pentru a inchiria aceasta masina, va rugam completati numele, adresa de email si numarul de telefon. Va vom contacta cu detalii suplimentare in cel mai scurt timp posibil.
+        <tr><td>Marca: Ford<td>
+        <tr><td>Model: Ranger<td>
+        <tr><td>An: 2020<td>
+        <tr><td>Putere: 213 CP<td>
+        <tr><td>Transmisie: 4X4<td>
+        <tr><td>Cutie de viteza: Automata<td>
+        <tr><td>Capacitate cilindrica: 1.9<td>
+        <tr><td>Numar locuri: 5<td>
+    </table>
+
+
+    <!--<div class="month">      
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>
+            August<br>
+            <span style="font-size:18px">2021</span>
+          </li>
+        </ul>
+      </div>
+      
+      <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+      </ul>
+      
+      <ul class="days">  
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+    </ul>-->
+
+    <form">
+        <label for="calendar">Perioada: </label>
+        <input type="date" id="myperiod" name="period1">
+        <span class='error-message' id='myperiod-error'></span>
+    
+        <label for="calen">Perioada: </label>
+        <input type="date" id="myperiod" name="period1">
+        <span class='error-message' id='myperiod-error'></span>
+        <input type="submit">
+    </form>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-snapchat-ghost"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html"><img src="images/logo_pfo.png" width="50px" alt="logo"></a></li>
+                <li class="list-inline-item"><a href="autoturisme.html">Autoturisme</a></li>
+                <li class="list-inline-item"><a href="inchirieri.html">Inchirieri</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                <li class="list-inline-item"><a href="termeni.html">Termemi&Conditii</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2022</p>
+        </footer>
+      </div>
+
+    <script src="JS/exemplu_java.js"></script>
+</body>
+</html>

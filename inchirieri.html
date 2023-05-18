@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PFO Cars</title>
+    <meta name="viewport" content="wigth=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel = "icon" href = "images/logo_pfo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="header" href="header.html">
+
+    <style>
+    body {
+        background-color: gainsboro;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="containerr">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_pfo.png" alt="logo"></a>
+        </div>
+        <div class="navbar">
+        
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        
+            <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                <li><a href="autoturisme.html">Autoturisme</a></li>
+                <li><a href="inchirieri.html">Inchirieri</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="termeni.html">Termeni&Conditii</a></li>
+            </ul>
+        
+        </div>
+    </div>
+
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Toate</button>
+        <button class="btn" onclick="filterSelection('bmw')"> BMW</button>
+        <button class="btn" onclick="filterSelection('volkswagen')"> Volkswagen</button>
+        <button class="btn" onclick="filterSelection('mercedes')"> Mercedes</button>
+        <button class="btn" onclick="filterSelection('dacia')"> Dacia</button>
+        <button class="btn" onclick="filterSelection('nisan')"> Nisan</button>
+        <button class="btn" onclick="filterSelection('hyundai')"> Hyundai</button>
+        <button class="btn" onclick="filterSelection('audi')"> Audi</button>
+        <button class="btn" onclick="filterSelection('jaguar')"> Jaguar</button>
+        <button class="btn" onclick="filterSelection('ford')"> Ford</button>
+    </div>
+    <!--<div class="rand">
+        <div class="coloana bmw">
+            <div class="content">
+            <img src="398_bmw.jpg" alt="all" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('bmw')"> <a href="inchirieri.html">BMW</a></button></h4>
+            </div>
+        </div>
+
+        <div class="coloana volkswagen">
+            <div class="content">
+            <img src="1vw.jpg" alt="volkswagen" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('volkswagen')"> <a href="inchiriere.html">Volkswagen</a></button></h4>
+            </div>
+        </div>
+
+        <div class="coloana mercedes">
+            <div class="content">
+            <img src="sigla mercedez benz.jpg" alt="all" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('mercedes')"> <a href="inchiriere.html">Mercedes</a></button></h4>
+            </div>
+        </div>
+
+        <div class="coloana dacia">
+            <div class="content">
+            <img src="dacia.jpg" alt="dacia" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('dacia')"> <a href="inchiriere.html">Dacia</a></button></h4>
+            </div>
+        </div>
+
+        <div class="coloana nisan">
+            <div class="content">
+            <img src="Nissan_logo.jpg" alt="dacia" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('nisan')"> <a href="inchiriere.html">Nisan</a></button></h4>
+            </div>
+        </div>
+
+        <div class="coloana hyundai">
+            <div class="content">
+            <img src="hyundai.jpg" alt="hyundai" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('hyundai')"> <a href="inchiriere.html">Hyundai</a></button></h4>
+            </div>
+        </div>
+
+        <div class="coloana audi">
+            <div class="content">
+            <img src="audi-logo-wallpaper-547-660x330.jpg" alt="audi" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('audi')"> <a href="inchiriere.html">Audi</a></button></h4>
+            </div>
+        </div>
+
+        <div class="coloana jaguar">
+            <div class="content">
+            <img src="jaguar.jpg" alt="name" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('jaguar')"> <a href="inchiriere.html">Jaguar</a></button></h4>
+            </div>
+        </div>
+
+        <div class="coloana ford">
+            <div class="content">
+            <img src="ford.jpg" alt="ford" style="width:80%">
+            <h4><button class="btn" onclick="filterSelection('ford')"> <a href="inchiriere.html">Ford</a></button></h4>
+            </div>
+        </div>
+    </div>-->
+    
+
+        <table border="1" align = center width = 90% bgcolor = white>
+            <th width="50%"><th colspan="2">Specificatii
+            <tr align = center><td rowspan="4"><button class="btn" onclick="filterSelection('bmw')"><a href="inchirieri.html"><img src="images/bmw_png.png" width="50%"></a></button><td>Model: BMW Coupe 420D<td>Numar locuri: 5
+            <tr align = center><td>Tip Combustibil: Diesel<td>Numar trepte viteze: 8
+            <tr align = center><td>Kilometraj: 123 456 KM<td>Fara accident
+            <tr align = center><td>Cai putere: 190 CP<td>Geamuri fumurii
+        </table>
+          
+        <table border="1" align = center width = 90% bgcolor = white>
+            <th width="50%"><th colspan="2">Specificatii
+            <tr align = center><td rowspan="4"><button class="btn" onclick="filterSelection('mercedes')"><a href="inchirieri.html"><img src="images/Mercedes_Benz_EQA_2021_1.png" width="50%"></a></button><td>Model: Mercedes EQA 250<td>Incarcare rapida
+            <tr align = center><td>Tip Combustibil: Electric<td>Autonomie: 426 KM
+            <tr align = center><td>Kilometraj: 5 000 KM<td>Caroserie: SUV
+            <tr align = center><td>Cai putere: 194 CP<td>Transmisie: fata
+        </table>
+          
+        <table border="1" align = center width = 90% bgcolor = white>
+            <th width="50%"><th colspan="2">Specificatii
+            <tr align = center><td rowspan="4"><button class="btn" onclick="filterSelection('audi')"><a href="inchirieri.html"><img src="images/etron55_sb_big.png" width="50%"></a></button><td>Model: Audi e-Tron Sportback<td>Autonomie: 436 KM
+            <tr align = center><td>Tip Combustibil: Electric<td>Caroserie: SUV
+            <tr align = center><td>Kilometraj: 15 000 KM<td>Fara accident
+            <tr align = center><td>Cai putere: 503 CP<td>Transmisie: integrala
+        </table>
+
+        <table border="1" align = center width = 90% bgcolor = white>
+            <th width="50%"><th colspan="2">Specificatii
+            <tr align = center></tr><td rowspan="4"><button class="btn" onclick="filterSelection('ford')"><a href="inchiriere.html"><img src="images/Ford.png" width="60%"></a></button><td>Model: Ford Ranger Wildtrack<td>Numar portiere: 4
+            <tr align = center><td>Tip Combustibil: Diesel<td>Caroserie: SUV
+            <tr align = center><td>Kilometraj: 13 890 KM<td>Transmisie: integrala
+            <tr align = center><td>Cai putere: 213 CP<td>Geamuri fumurii
+        </table>
+    
+
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-snapchat-ghost"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html"><img src="images/logo_pfo.png" width="50px" alt="logo"></a></li>
+                    <li class="list-inline-item"><a href="autoturisme.html">Autoturisme</a></li>
+                    <li class="list-inline-item"><a href="inchirieri.html">Inchirieri</a></li>
+                    <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                    <li class="list-inline-item"><a href="termeni.html">Termemi&Conditii</a></li>
+                </ul>
+                <p class="copyright">Company Name © 2022</p>
+            </footer>
+          </div>
+    
+    <script src="JS/javascript.js"></script>
+    <script src="JS/exemplu_java.js"></script>
+</body>
+</html>
